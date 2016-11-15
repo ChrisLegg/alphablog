@@ -1,3 +1,9 @@
-<h1 align="center">Listing <%= pluralize(@articles.count, 'Articles') %></h1>
+<h1 align="center">Listing Articles</h1>
 
+<div align="center">
+  <%= will_paginate %>
+</div>
 <%= render 'articles', obj: @articles %>
+<div align="center">
+  <%= will_paginate %>
+</div>
